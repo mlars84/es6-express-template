@@ -11,6 +11,7 @@ import index from './routes/index';
 const app = express();
 const debug = Debug('debug-es6-express-template:app');
 
+// middleware
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
